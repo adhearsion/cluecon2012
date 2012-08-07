@@ -1,15 +1,15 @@
 class SimpleIvr < Adhearsion::CallController
   PROMPTS = {
-    1 => "base256/classroom",
-    2 => "base256/Jupiter",
-    3 => "base256/flagpole",
-    4 => "base256/atmosphere",
-    5 => "base256/stagehand",
-    6 => "base256/preshrunk",
-    7 => "base256/pioneer",
-    8 => "base256/blowtorch",
-    9 => "base256/Istanbul",
-    0 => "base256/soybean"
+    1 => "base256/classroom.wav",
+    2 => "base256/Jupiter.wav",
+    3 => "base256/flagpole.wav",
+    4 => "base256/atmosphere.wav",
+    5 => "base256/stagehand.wav",
+    6 => "base256/preshrunk.wav",
+    7 => "base256/pioneer.wav",
+    8 => "base256/blowtorch.wav",
+    9 => "base256/Istanbul.wav",
+    0 => "base256/soybean.wav"
   }
 
   def run
