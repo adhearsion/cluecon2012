@@ -19,6 +19,10 @@ If you are using Asterisk 1.8, you will need to add an additional context with t
 
 Install the [rayo-server](https://github.com/rayo/rayo-server) app into PRISM 11 and follow the [configuration guide](https://github.com/rayo/rayo-server/wiki/Single-node-and-cluster-configuration-reference).
 
+## FreeSWITCH
+
+Check out the [minimal FreeSWITCH configuration](https://github.com/adhearsion/fs-min-config) for an example configuration.
+
 ## Configure your app
 
 In `config/adhearsion.rb` you'll need to set the VoIP platform you're using, along with the correct credentials. You'll find example config there, so follow the comments.
