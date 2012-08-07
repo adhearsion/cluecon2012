@@ -16,7 +16,6 @@ class SimpleIvr < Adhearsion::CallController
     play path_for "misc/call_secured.wav"
     loop do
       index = ask path_for("ivr/ivr-enter_ext_pound.wav"), :limit => 1, :timeout => 5
-logger.info index.inspect
       break unless index.status == :limited
       play path_for PROMPTS[index.response.to_i]
     end
@@ -25,7 +24,6 @@ logger.info index.inspect
   end
 
   def path_for(prompt)
-logger.info "Checking for #{prompt}"
     file_root = "/opt/freeswitch/sounds/en/us/callie"
     dir, file = prompt.split '/'
     case Adhearsion.config.punchblock['platform']
